@@ -9,7 +9,7 @@
 * {
   padding: 0px;
   margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .main {
@@ -41,7 +41,7 @@
 }
 .card article h1 {
   color: var(--Blue950);
-
+  font-weight: 900;
   font-size: 25px;
 }
 .card article p {
@@ -54,7 +54,6 @@
   padding: 40px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
   gap: 20px;
 }
@@ -71,7 +70,7 @@
 .card article div a {
   font-size: 12px;
   color: var(--Blue700);
-  font-weight: bold;
+  font-weight: 800;
 }
 .card article div a:hover {
   text-decoration: none;
@@ -96,7 +95,7 @@
 }
 .card article div div div p:first-of-type {
   color: var(--Blue950);
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .card article div div img {

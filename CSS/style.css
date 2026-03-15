@@ -1,0 +1,133 @@
+:root {
+  --Blue100: hsl(225, 100%, 94%);
+  --Blue700: hsl(245, 75%, 52%);
+
+  --Blue50: hsl(225, 100%, 98%);
+  --Gray600: hsl(224, 23%, 55%);
+  --Blue950: hsl(223, 47%, 23%);
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--Blue100);
+}
+.card {
+  width: 90%;
+  max-width: 400px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+}
+.card img {
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.card article h1 {
+  color: var(--Blue950);
+
+  font-size: 25px;
+}
+.card article p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.5rem;
+  color: var(--Gray600);
+}
+.card article {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 20px;
+}
+.card article > div {
+  width: 90%;
+  border-radius: 12px;
+  padding: 5px 12px;
+  background-color: var(--Blue50);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.card article div a {
+  font-size: 12px;
+  color: var(--Blue700);
+  font-weight: bold;
+}
+.card article div a:hover {
+  text-decoration: none;
+  color: var(--Blue950);
+}
+.card article div > div {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card article div div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
+}
+.card article div div div p {
+  font-size: 14px;
+  margin-right: 20px;
+}
+.card article div div div p:first-of-type {
+  color: var(--Blue950);
+  font-weight: bold;
+}
+
+.card article div div img {
+  width: 35px;
+}
+.card article button:first-of-type {
+  background-color: var(--Blue700);
+  color: white;
+  padding: 14px;
+  border-radius: 10px;
+  width: 100%;
+}
+.card article button {
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+}
+.card article button:nth-of-type(2) {
+  margin-top: 20px;
+  background-color: white;
+  color: var(--Gray600);
+}
+.card article button:nth-of-type(2):hover {
+  color: var(--Blue950);
+}
+.card article button:first-of-type:hover {
+  background-color: hsla(245, 41%, 47%, 0.5);
+}
+
+@media (max-width: 768px) {
+  .main {
+    background-image: url(../images/pattern-background-mobile.svg);
+  }
+}
